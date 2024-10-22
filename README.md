@@ -2,9 +2,9 @@
 
 Fördjupa JavaScript-kunskaper - Ämnen: - If-satser, else if, else - Switch-satser - Loopar: for, while, do-while - Logiska operatorer och villkor
 
-if/else if/else Övning:
+## if/else if/else Övning:
 
-Övning: Temperaturbedömning (Lätt)
+### Övning: Temperaturbedömning (Lätt)
 
 Uppgift:
 
@@ -17,7 +17,7 @@ Annars, skriv ut "Det är kallt ute."
 Tips:
 Kom ihåg att konvertera användarinmatningen till ett nummer.
 
-Övning: Betygskonvertering (Medel)
+### Övning: Betygskonvertering (Medel)
 
 Uppgift:
 
@@ -33,7 +33,7 @@ Skriv ut det motsvarande bokstavsbetyget.
 Tips:
 Använd flera if-else-if-satser för att kontrollera intervallen.
 
-Övning: Butiksrabatt (Medel)
+### Övning: Butiksrabatt (Medel)
 
 Uppgift:
 
@@ -46,7 +46,7 @@ Skriv ut det slutliga priset efter rabatt.
 Tips:
 Använd logiska operatorer för att kombinera villkor.
 
-Övning: Lösenordskontroll (Medel)
+### Övning: Lösenordskontroll (Medel)
 
 Uppgift:
 
@@ -60,7 +60,7 @@ Skriv ut om lösenordet är godkänt eller inte.
 Tips:
 Använd string-metoder och regex för att kontrollera lösenordet (eller enklare kontroller om regex inte är bekant).
 
-Övning: Trafikljus (Medel)
+### Övning: Trafikljus (Medel)
 
 Uppgift:
 
@@ -74,7 +74,7 @@ Hantera även ogiltiga inmatningar.
 Tips:
 Använd if-else-satser och tänk på att göra inmatningen skiftlägesokänslig med toLowerCase().
 
-Övning: Nummer i Ord (Svår)
+### Övning: Nummer i Ord (Svår)
 
 Uppgift:
 
@@ -91,7 +91,7 @@ Om talet är utanför intervallet, skriv ut "Ogiltigt tal".
 Tips:
 Använd if-else-satser eller en switch-sats.
 
-Övning: Planetvikt (Svår)
+### Övning: Planetvikt (Svår)
 
 Uppgift:
 
@@ -106,7 +106,7 @@ Hantera ogiltiga inmatningar.
 Tips:
 Använd logiska operatorer och if-else-satser för att hantera valen.
 
-Övning: Quizspel (Svår)
+### Övning: Quizspel (Svår)
 
 Uppgift:
 
@@ -118,7 +118,7 @@ Tips:
 Använd if-satser för att kontrollera svaren.
 Frågorna kan vara flervalsfrågor eller fritext.
 
-Övning: Validera E-postadress (Svår)
+### Övning: Validera E-postadress (Svår)
 
 Uppgift:
 
@@ -126,7 +126,7 @@ Be användaren ange en e-postadress.
 Kontrollera att e-postadressen innehåller "@" och ".".
 Skriv ut om e-postadressen är giltig eller ogiltig.
 
-Övning: Enkel Bankomat (Svår)
+### Övning: Enkel Bankomat (Svår)
 
 Uppgift:
 
@@ -138,7 +138,7 @@ Om försök tar slut, skriv ut "Kortet är blockerat.".
 Tips:
 Använd en loop tillsammans med if-satser.
 
-Övning: Matbeställning (Medel)
+### Övning: Matbeställning (Medel)
 
 Uppgift:
 
@@ -149,7 +149,7 @@ Skriv ut det valda valet och priset.
 Tips:
 Använd if-else-satser för att matcha valet med maträtten.
 
-Övning: Hastighetskontroll (Medel)
+### Övning: Hastighetskontroll (Medel)
 
 Uppgift:
 
@@ -161,7 +161,7 @@ Om hastigheten är under 80 km/h, skriv ut "För långsamt, öka hastigheten.".
 Tips:
 Använd if-else-if-satser för att hantera intervallen.
 
-Övning: Enkel Valutakonverterare (Lätt)
+### Övning: Enkel Valutakonverterare (Lätt)
 
 Uppgift:
 
@@ -172,7 +172,7 @@ Skriv ut det konverterade beloppet i EUR.
 Tips:
 Använd enkel beräkning och skriv ut resultatet med två decimaler.
 
-Övning: Filmrekommendation (Medel)
+### Övning: Filmrekommendation (Medel)
 
 Uppgift:
 
@@ -185,7 +185,7 @@ Under 13: "Animerad film"
 Tips:
 Använd if-else-if-satser för att hantera åldersintervallen.
 
-Övning: Matematiskt Spel (Svår)
+### Övning: Matematiskt Spel (Svår)
 
 Uppgift:
 
@@ -197,7 +197,7 @@ Tips:
 Använd Math.random() och Math.floor() för att generera talen.
 Använd if-satser för att kontrollera svaret.
 
-Övning: BMI-kalkylator (Medel)
+### Övning: BMI-kalkylator (Medel)
 
 Uppgift:
 
@@ -212,7 +212,7 @@ Under 18.5: "Undervikt"
 Tips:
 Använd if-else-if-satser för att klassificera BMI-värdet.
 
-Övning: Resekostnadskalkylator (Svår)
+### Övning: Resekostnadskalkylator (Svår)
 
 Uppgift:
 
@@ -224,7 +224,7 @@ Tips:
 Kom ihåg att 1 mil = 10 km.
 Använd matematiska beräkningar och if-satser för validering.
 
-Övning: Kontrollera Anagram (Svår)
+### Övning: Kontrollera Anagram (Svår)
 
 Uppgift:
 
@@ -238,7 +238,7 @@ Använd split(''), sort(), join('') för att sortera bokstäverna i varje ord.
 Jämför de sorterade strängarna för att avgöra om orden är anagram.
 Gör strängarna gemener med toLowerCase() för att undvika problem med versaler.
 
-Övning: Nummergissningsspel (Svår)
+### Övning: Nummergissningsspel (Svår)
 
 Uppgift:
 
@@ -253,9 +253,9 @@ Använd if-else-satser för att jämföra gissningen med det slumpmässiga talet
 
 ---
 
-Övningar med olika svårighetsgrader som kombinerar if-satser med funktioner och metoder för datatyperna String, Number och Object:
+## Övningar med olika svårighetsgrader som kombinerar if-satser med funktioner och metoder för datatyperna String, Number och Object:
 
-Övning 1: Kontrollera Versaler i en Sträng (Lätt)
+### Övning 1: Kontrollera Versaler i en Sträng (Lätt)
 
 Uppgift:
 
@@ -268,7 +268,7 @@ Tips:
 Använd toLowerCase() eller toUpperCase() för att jämföra strängen.
 Jämför originalsträngen med strängen konverterad till gemener eller versaler.
 
-Övning 2: Jämföra Tal med toFixed (Lätt)
+### Övning 2: Jämföra Tal med toFixed (Lätt)
 
 Uppgift:
 
@@ -280,7 +280,7 @@ Tips:
 Använd toFixed(2) för att avrunda talet till två decimaler.
 Kom ihåg att toFixed() returnerar en sträng; konvertera tillbaka till Number vid behov.
 
-Övning 3: Kontrollera Egenskap i Objekt (Medel)
+### Övning 3: Kontrollera Egenskap i Objekt (Medel)
 
 Uppgift:
 
@@ -294,7 +294,7 @@ Tips:
 Använd Object.keys(person) för att få en lista över egenskaper.
 Använd includes() för att kontrollera om egenskapen finns i arrayen.
 
-Övning 4: Validera Telefonnummer (Medel)
+### Övning 4: Validera Telefonnummer (Medel)
 
 Uppgift:
 
@@ -309,7 +309,7 @@ Tips:
 Använd length för att kontrollera längden på strängen.
 Använd isNaN() för att kontrollera om strängen endast innehåller siffror.
 
-Övning 5: Kontrollera Inledande Text (Medel)
+### Övning 5: Kontrollera Inledande Text (Medel)
 
 Uppgift:
 
@@ -321,7 +321,7 @@ Annars, skriv ut "Ingen hälsning upptäckt."
 Tips:
 Använd .slice()
 
-Övning 6: Kontonummer Validering (Svår)
+### Övning 6: Kontonummer Validering (Svår)
 
 Uppgift:
 
@@ -337,7 +337,7 @@ Tips:
 Använd startsWith() för att kontrollera inledande tecken.
 Använd en loop eller isNaN() för att kontrollera om strängen innehåller endast siffror.
 
-Övning 7: Jämföra Produkters Priser (Svår)
+### Övning 7: Jämföra Produkters Priser (Svår)
 
 Uppgift:
 
@@ -350,7 +350,7 @@ Om de kostar lika mycket, skriv ut "Produkter kostar lika mycket."
 Tips:
 Åtkomst till objektets egenskaper via punktnotation, t.ex. produktA.pris.
 
-Övning 8: Kontrollera Palindrom (Svår)
+### Övning 8: Kontrollera Palindrom (Svår)
 
 Uppgift:
 
@@ -364,7 +364,7 @@ Använd split(''), reverse(), join('') för att vända strängen.
 Jämför den ursprungliga strängen med den omvända strängen.
 Gör strängen gemener med toLowerCase() för att undvika problem med versaler.
 
-Övning 9: Analys av Textlängd (Mycket Svår)
+### Övning 9: Analys av Textlängd (Mycket Svår)
 
 Uppgift:
 
@@ -378,7 +378,7 @@ Använd trim() för att ta bort extra mellanslag i början och slutet.
 Dela upp meningen i en array av ord med split(' ').
 Filtrera bort tomma strängar i arrayen om det finns flera mellanslag.
 
-Övning 10: Analysera Studentens Betyg (Mycket Svår)
+### Övning 10: Analysera Studentens Betyg (Mycket Svår)
 
 Uppgift:
 
