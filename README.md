@@ -224,16 +224,19 @@ Tips:
 Kom ihåg att 1 mil = 10 km.
 Använd matematiska beräkningar och if-satser för validering.
 
-Övning: Palindromkontroll (Svår)
+Övning: Kontrollera Anagram (Svår)
 
 Uppgift:
 
-Be användaren ange ett ord.
-Kontrollera om ordet är ett palindrom (stavas likadant fram- och baklänges).
-Skriv ut om det är ett palindrom eller inte.
+Be användaren ange två ord.
+Kontrollera om orden är anagram av varandra (dvs. om de innehåller exakt samma bokstäver i olika ordning).
+Om de är anagram, skriv ut "Orden är anagram."
+Annars, skriv ut "Orden är inte anagram."
 
 Tips:
-Använd string-metoder för att vända ordet och jämföra.
+Använd split(''), sort(), join('') för att sortera bokstäverna i varje ord.
+Jämför de sorterade strängarna för att avgöra om orden är anagram.
+Gör strängarna gemener med toLowerCase() för att undvika problem med versaler.
 
 Övning: Nummergissningsspel (Svår)
 
@@ -247,3 +250,148 @@ Skriv ut ett meddelande om användaren vinner eller förlorar.
 Tips:
 Använd en loop för att räkna försök.
 Använd if-else-satser för att jämföra gissningen med det slumpmässiga talet.
+
+---
+
+Övningar med olika svårighetsgrader som kombinerar if-satser med funktioner och metoder för datatyperna String, Number och Object:
+
+Övning 1: Kontrollera Versaler i en Sträng (Lätt)
+
+Uppgift:
+
+Be användaren ange ett ord.
+Kontrollera om ordet innehåller några versaler (stora bokstäver).
+Om ordet innehåller versaler, skriv ut "Ordet innehåller versaler."
+Annars, skriv ut "Ordet innehåller inga versaler."
+
+Tips:
+Använd toLowerCase() eller toUpperCase() för att jämföra strängen.
+Jämför originalsträngen med strängen konverterad till gemener eller versaler.
+
+Övning 2: Jämföra Tal med toFixed (Lätt)
+
+Uppgift:
+
+Be användaren ange ett decimaltal.
+Om talet avrundat till två decimaler är större än 10.5, skriv ut "Talet är större än 10.5."
+Annars, skriv ut "Talet är mindre än eller lika med 10.5."
+
+Tips:
+Använd toFixed(2) för att avrunda talet till två decimaler.
+Kom ihåg att toFixed() returnerar en sträng; konvertera tillbaka till Number vid behov.
+
+Övning 3: Kontrollera Egenskap i Objekt (Medel)
+
+Uppgift:
+
+Skapa ett objekt person med egenskaperna namn, ålder och stad.
+Be användaren ange en egenskap att söka efter (t.ex. "ålder").
+Kontrollera om egenskapen finns i objektet med hjälp av Object.keys().
+Om egenskapen finns, skriv ut dess värde.
+Annars, skriv ut "Egenskapen finns inte."
+
+Tips:
+Använd Object.keys(person) för att få en lista över egenskaper.
+Använd includes() för att kontrollera om egenskapen finns i arrayen.
+
+Övning 4: Validera Telefonnummer (Medel)
+
+Uppgift:
+
+Be användaren ange ett telefonnummer.
+Kontrollera att telefonnumret:
+Är exakt 10 tecken långt.
+Innehåller endast siffror.
+Om båda villkoren uppfylls, skriv ut "Telefonnumret är giltigt."
+Annars, skriv ut "Telefonnumret är ogiltigt."
+
+Tips:
+Använd length för att kontrollera längden på strängen.
+Använd isNaN() för att kontrollera om strängen endast innehåller siffror.
+
+Övning 5: Kontrollera Inledande Text (Medel)
+
+Uppgift:
+
+Be användaren ange en mening.
+Extrahera de första fem tecknen med slice().
+Om de första fem tecknen är "Hello", skriv ut "Hälsning upptäckt."
+Annars, skriv ut "Ingen hälsning upptäckt."
+
+Tips:
+Använd .slice()
+
+Övning 6: Kontonummer Validering (Svår)
+
+Uppgift:
+
+Be användaren ange ett kontonummer.
+Kontrollera att kontonumret:
+Är exakt 14 tecken långt.
+Innehåller endast siffror.
+Börjar med "75".
+Om alla villkor uppfylls, skriv ut "Kontonumret är giltigt."
+Annars, skriv ut vilket villkor som inte uppfylldes.
+
+Tips:
+Använd startsWith() för att kontrollera inledande tecken.
+Använd en loop eller isNaN() för att kontrollera om strängen innehåller endast siffror.
+
+Övning 7: Jämföra Produkters Priser (Svår)
+
+Uppgift:
+
+Skapa två objekt produktA och produktB med egenskaperna namn och pris.
+Jämför priserna på de två produkterna.
+Om produktA är dyrare än produktB, skriv ut "produktA.namn är dyrare."
+Om produktB är dyrare, skriv ut "produktB.namn är dyrare."
+Om de kostar lika mycket, skriv ut "Produkter kostar lika mycket."
+
+Tips:
+Åtkomst till objektets egenskaper via punktnotation, t.ex. produktA.pris.
+
+Övning 8: Kontrollera Palindrom (Svår)
+
+Uppgift:
+
+Be användaren ange ett ord.
+Kontrollera om ordet är ett palindrom (stavas likadant fram- och baklänges).
+Om det är ett palindrom, skriv ut "Ordet är ett palindrom."
+Annars, skriv ut "Ordet är inte ett palindrom."
+
+Tips:
+Använd split(''), reverse(), join('') för att vända strängen.
+Jämför den ursprungliga strängen med den omvända strängen.
+Gör strängen gemener med toLowerCase() för att undvika problem med versaler.
+
+Övning 9: Analys av Textlängd (Mycket Svår)
+
+Uppgift:
+
+Be användaren ange en mening.
+Räkna antalet ord i meningen genom att använda split(' ').
+Om meningen innehåller fler än 10 ord, skriv ut "Meningen är för lång."
+Annars, skriv ut "Meningen är godkänd."
+
+Tips:
+Använd trim() för att ta bort extra mellanslag i början och slutet.
+Dela upp meningen i en array av ord med split(' ').
+Filtrera bort tomma strängar i arrayen om det finns flera mellanslag.
+
+Övning 10: Analysera Studentens Betyg (Mycket Svår)
+
+Uppgift:
+
+Skapa ett objekt student med egenskaperna:
+namn: studentens namn.
+betyg: en array av nummer (studentens betyg).
+stad: studentens stad.
+Beräkna medelvärdet av betygen i betyg.
+Om medelvärdet är 90 eller högre, lägg till egenskapen toppelev med värdet true i objektet.
+Annars, lägg till egenskapen toppelev med värdet false.
+Skriv ut hela student-objektet.
+
+Tips:
+Använd en loop eller reduce() för att beräkna summan av betygen.
+Beräkna medelvärdet genom att dividera summan med antalet betyg.
+Lägg till en ny egenskap till objektet med student.toppelev = true;
