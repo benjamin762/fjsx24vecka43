@@ -1,397 +1,219 @@
 # fjsx24vecka43
 
-Fördjupa JavaScript-kunskaper - Ämnen: - If-satser, else if, else - Switch-satser - Loopar: for, while, do-while - Logiska operatorer och villkor
+Fördjupa JavaScript-kunskaper - Ämnen: Loopar: for, while, do-while
 
-if/else if/else Övning:
+Övningar:
 
-Övning: Temperaturbedömning (Lätt)
+Övning 1: Multiplikationstabell (Lätt)
 
 Uppgift:
 
-Be användaren ange temperaturen i Celsius.
-Om temperaturen är över 30 grader, skriv ut "Det är väldigt varmt ute."
-Om temperaturen är mellan 20 och 30 grader, skriv ut "Det är varmt ute."
-Om temperaturen är mellan 10 och 20 grader, skriv ut "Det är svalt ute."
-Annars, skriv ut "Det är kallt ute."
+Be användaren ange ett tal mellan 1 och 10.
+Använd en for-loop för att skriva ut multiplikationstabellen för det talet (1 till 10).
 
 Tips:
-Kom ihåg att konvertera användarinmatningen till ett nummer.
+Loop från 1 till 10 och multiplicera med användarens tal.
+Exempel:
 
-Övning: Betygskonvertering (Medel)
+Övning 2: Räkna Ned (Lätt)
 
 Uppgift:
 
-Be användaren ange ett numeriskt betyg mellan 0 och 100.
-Konvertera betyget till en bokstav enligt följande:
-90-100: A
-80-89: B
-70-79: C
-60-69: D
-0-59: F
-Skriv ut det motsvarande bokstavsbetyget.
+Skriv en loop som räknar ned från 10 till 1 och skriver ut varje nummer.
 
 Tips:
-Använd flera if-else-if-satser för att kontrollera intervallen.
+Använd en for-loop med minskande räknare.
 
-Övning: Butiksrabatt (Medel)
+Övning 3: Summa av Udda Tal (Medel)
 
 Uppgift:
 
-Be användaren ange sin kundtyp: "Ny" eller "Återkommande".
-Be användaren ange köpbeloppet.
-Om kunden är "Återkommande" och köpbeloppet är över 500 kr, ge 15% rabatt.
-Om kunden är "Ny" och köpbeloppet är över 500 kr, ge 10% rabatt.
-Skriv ut det slutliga priset efter rabatt.
+Beräkna summan av alla udda tal mellan 1 och 100.
 
 Tips:
-Använd logiska operatorer för att kombinera villkor.
+Kontrollera om ett tal är udda med i % 2 !== 0.
+Exempel:
 
-Övning: Lösenordskontroll (Medel)
+Övning 4: Enkel Räknare (Medel)
 
 Uppgift:
 
-Be användaren ange ett lösenord.
-Kontrollera att lösenordet uppfyller följande kriterier:
-Minst 8 tecken långt.
-Innehåller minst en siffra.
-Innehåller minst en versal bokstav.
-Skriv ut om lösenordet är godkänt eller inte.
+Skapa en enkel räknare som låter användaren lägga till eller dra ifrån ett värde.
+Programmet ska fortsätta fråga användaren tills de väljer att avsluta.
 
 Tips:
-Använd string-metoder och regex för att kontrollera lösenordet (eller enklare kontroller om regex inte är bekant).
+Använd en while- eller do-while-loop för att upprepa.
+Håll reda på det nuvarande värdet i en variabel.
 
-Övning: Trafikljus (Medel)
+Övning 5: Fibonacci-sekvensen (Svår)
 
 Uppgift:
 
-Be användaren ange färgen på ett trafikljus: "Röd", "Gul" eller "Grön".
-Skriv ut följande meddelanden baserat på färgen:
-"Stanna" för "Röd".
-"Förbered att stanna" för "Gul".
-"Kör" för "Grön".
-Hantera även ogiltiga inmatningar.
+Skriv ett program som genererar Fibonacci-sekvensen upp till ett visst antal termer som användaren anger.
 
 Tips:
-Använd if-else-satser och tänk på att göra inmatningen skiftlägesokänslig med toLowerCase().
+Fibonacci-sekvensen: varje tal är summan av de två föregående (0, 1, 1, 2, 3, 5, 8, ...).
 
-Övning: Nummer i Ord (Svår)
+Övning 6: Gissa Talet-spel (Svår)
 
 Uppgift:
 
-Be användaren ange ett tal mellan 0 och 5.
-Konvertera talet till dess motsvarande ord och skriv ut det.
-0: "Noll"
-1: "Ett"
-2: "Två"
-3: "Tre"
-4: "Fyra"
-5: "Fem"
-Om talet är utanför intervallet, skriv ut "Ogiltigt tal".
+Skapa ett spel där datorn väljer ett slumpmässigt tal mellan 1 och 100.
+Användaren ska gissa talet.
+Efter varje gissning ska användaren få veta om gissningen är för hög eller för låg.
+Spelet fortsätter tills användaren gissar rätt.
 
 Tips:
-Använd if-else-satser eller en switch-sats.
+Använd Math.random() och Math.floor() för att generera ett slumpmässigt tal.
+Använd en while-loop för att upprepa gissningarna.
 
-Övning: Planetvikt (Svår)
+Övning 7: Enkel Meny (Medel)
 
 Uppgift:
 
-Be användaren ange sin vikt i kilogram.
-Be användaren välja en planet (t.ex. "Mars", "Jupiter").
-Beräkna och skriv ut vad användaren skulle väga på den valda planeten baserat på gravitationsfaktorer:
-Mars: 0.38
-Jupiter: 2.34
-Månen: 0.16
-Hantera ogiltiga inmatningar.
+Skapa en meny med flera alternativ (t.ex. 1. Se datum, 2. Se tid, 3. Avsluta).
+Användaren ska kunna välja ett alternativ och få relevant information.
+Menyn ska visas igen efter varje val tills användaren väljer att avsluta.
 
 Tips:
-Använd logiska operatorer och if-else-satser för att hantera valen.
+Använd en do-while-loop för att visa menyn upprepade gånger.
 
-Övning: Quizspel (Svår)
+Övning 8: Räkna Antalet Vokaler i en Sträng (Svår)
 
 Uppgift:
 
-Skapa ett enkelt quiz med tre frågor.
-För varje korrekt svar får användaren en poäng.
-Efter sista frågan, skriv ut den totala poängen.
+Be användaren ange en text.
+Använd en for-loop för att iterera över varje tecken i texten.
+Räkna antalet vokaler (a, e, i, o, u, y) i texten.
+Skriv ut resultatet.
 
 Tips:
-Använd if-satser för att kontrollera svaren.
-Frågorna kan vara flervalsfrågor eller fritext.
+Använd toLowerCase() för att göra jämförelsen skiftlägesokänslig.
+Använd charAt(i) eller indexering text[i] för att få varje tecken.
 
-Övning: Validera E-postadress (Svår)
-
-Uppgift:
-
-Be användaren ange en e-postadress.
-Kontrollera att e-postadressen innehåller "@" och ".".
-Skriv ut om e-postadressen är giltig eller ogiltig.
-
-Övning: Enkel Bankomat (Svår)
+Övning 9: Faktorberäkning (Medel)
 
 Uppgift:
 
-Be användaren ange en PIN-kod.
-Ge användaren tre försök att ange rätt PIN (t.ex. "1234").
-Om rätt PIN anges, skriv ut "Välkommen!".
-Om försök tar slut, skriv ut "Kortet är blockerat.".
+Be användaren ange ett positivt heltal.
+Beräkna och skriv ut n! (n-fakultet), dvs. produkten av alla positiva heltal mindre än eller lika med n.
 
 Tips:
-Använd en loop tillsammans med if-satser.
+Använd en for-loop för att multiplicera talen.
 
-Övning: Matbeställning (Medel)
-
-Uppgift:
-
-Skapa en meny med tre maträtter och deras priser.
-Be användaren välja en maträtt genom att ange dess nummer.
-Skriv ut det valda valet och priset.
-
-Tips:
-Använd if-else-satser för att matcha valet med maträtten.
-
-Övning: Hastighetskontroll (Medel)
+Övning 10: Palindromkontroll (Svår)
 
 Uppgift:
 
-Be användaren ange sin hastighet i km/h.
-Om hastigheten är över 120 km/h, skriv ut "För fort, böter!".
-Om hastigheten är mellan 80 km/h och 120 km/h, skriv ut "Godkänd hastighet.".
-Om hastigheten är under 80 km/h, skriv ut "För långsamt, öka hastigheten.".
+Be användaren ange en text.
+Använd en loop för att kontrollera om texten är ett palindrom (samma fram- och baklänges).
+Skriv ut om texten är ett palindrom eller inte.
 
 Tips:
-Använd if-else-if-satser för att hantera intervallen.
+Använd en for-loop för att jämföra tecken från början och slutet.
 
-Övning: Enkel Valutakonverterare (Lätt)
+console.log("Hej Onsdag!");
+// Ämnen att täcka:
 
-Uppgift:
+// For-loop
 
-Be användaren ange ett belopp i SEK.
-Konvertera beloppet till EUR (1 EUR = 10 SEK).
-Skriv ut det konverterade beloppet i EUR.
+// Syntaxen för en For-loop:
 
-Tips:
-Använd enkel beräkning och skriv ut resultatet med två decimaler.
+// for (initialisering; villkor; uppdatering) {
+// // Kod som upprepas
+// }
 
-Övning: Filmrekommendation (Medel)
+// Code Along - Exempel 1: Iterera över en Talserie
 
-Uppgift:
+// for (let i = 1; i <= 10; i++) {
+// console.log(i);
+// }
 
-Be användaren ange sin ålder.
-Baserat på åldern, rekommendera en film:
-Under 13: "Animerad film"
-13 till 17: "Ungdomsfilm"
-18 och över: "Vuxenfilm"
+// Förklaring:
 
-Tips:
-Använd if-else-if-satser för att hantera åldersintervallen.
+// let i = 1; - Startvärde för räknaren.
+// i <= 10; - Loopens villkor; körs så länge detta är sant.
+// i++ - Uppdatering av räknaren efter varje iteration.
 
-Övning: Matematiskt Spel (Svår)
+// Code Along - Exempel 2: Beräkna Summan av Tal
 
-Uppgift:
+// Uppgift:
 
-Generera två slumpmässiga tal mellan 1 och 10.
-Be användaren att multiplicera dessa två tal och ange svaret.
-Kontrollera om svaret är korrekt och skriv ut ett passande meddelande.
+// Beräkna summan av talen från 1 till 100.
 
-Tips:
-Använd Math.random() och Math.floor() för att generera talen.
-Använd if-satser för att kontrollera svaret.
+// let summa = 0;
+// for (let i = 1; i <= 100; i++) {
+// summa += i;
+// }
+// console.log(`Summan av talen 1 till 100 är ${summa}.`);
 
-Övning: BMI-kalkylator (Medel)
+// Förklaring:
 
-Uppgift:
+// Variabeln summa sammlar värdet av i, i varje iteration.
+// (formeln för summan av en aritmetisk serie är: 𝑛(𝑛+1) där 𝑛 n är 100 i ditt fall).
+// /2
 
-Be användaren ange sin längd i meter och vikt i kilogram.
-Beräkna användarens BMI med formeln: BMI = vikt / (längd \* längd).
-Skriv ut BMI och en hälsoklassificering:
-Under 18.5: "Undervikt"
-18.5 - 24.9: "Normalvikt"
-25 - 29.9: "Övervikt"
-30 och över: "Fetma"
+// ------------------------------------------------------
 
-Tips:
-Använd if-else-if-satser för att klassificera BMI-värdet.
+// While- och Do-while-loopar
 
-Övning: Resekostnadskalkylator (Svår)
+// While-loopar:
 
-Uppgift:
+// Syntax:
 
-Be användaren ange avståndet i kilometer och bränsleförbrukningen i liter per mil.
-Be användaren ange bränslepriset per liter.
-Beräkna och skriv ut den totala resekostnaden.
+// while (villkor) {
+// // Kod som upprepas så länge villkoret är sant
+// }
 
-Tips:
-Kom ihåg att 1 mil = 10 km.
-Använd matematiska beräkningar och if-satser för validering.
+// Exempel 3: Gissa Talet (Använda While-loop)
 
-Övning: Kontrollera Anagram (Svår)
+// Uppgift:
 
-Uppgift:
+// Skapa ett program där användaren ska gissa ett förbestämt tal.
+// let randomNumber = Math.random() \* 10;
+// randomNumber = Math.ceil(randomNumber);
 
-Be användaren ange två ord.
-Kontrollera om orden är anagram av varandra (dvs. om de innehåller exakt samma bokstäver i olika ordning).
-Om de är anagram, skriv ut "Orden är anagram."
-Annars, skriv ut "Orden är inte anagram."
+// let hemligtTal = randomNumber;
+// let gissning = Number(prompt("Gissa ett tal mellan 1 och 10:"));
 
-Tips:
-Använd split(''), sort(), join('') för att sortera bokstäverna i varje ord.
-Jämför de sorterade strängarna för att avgöra om orden är anagram.
-Gör strängarna gemener med toLowerCase() för att undvika problem med versaler.
+// while (gissning !== hemligtTal) {
+// gissning = Number(prompt("Fel gissat! Försök igen:"));
+// }
 
-Övning: Nummergissningsspel (Svår)
+// console.log("Grattis! Du gissade rätt.");
 
-Uppgift:
+// Förklaring:
 
-Skapa ett spel där datorn väljer ett slumpmässigt tal mellan 1 och 50.
-Användaren har fem försök att gissa talet.
-Efter varje gissning, ge en ledtråd om talet är högre eller lägre.
-Skriv ut ett meddelande om användaren vinner eller förlorar.
+// Loopen fortsätter tills användaren gissar rätt tal.
 
-Tips:
-Använd en loop för att räkna försök.
-Använd if-else-satser för att jämföra gissningen med det slumpmässiga talet.
+// Do-while-loopar:
 
----
+// Syntax:
 
-Övningar med olika svårighetsgrader som kombinerar if-satser med funktioner och metoder för datatyperna String, Number och Object:
+// do {
+// // Kod som körs minst en gång
+// } while (villkor);
 
-Övning 1: Kontrollera Versaler i en Sträng (Lätt)
+// Exempel 4: Menyval (Använda Do-while-loop)
 
-Uppgift:
+// Uppgift:
 
-Be användaren ange ett ord.
-Kontrollera om ordet innehåller några versaler (stora bokstäver).
-Om ordet innehåller versaler, skriv ut "Ordet innehåller versaler."
-Annars, skriv ut "Ordet innehåller inga versaler."
+// Skapa en enkel meny som upprepas tills användaren väljer att avsluta.
 
-Tips:
-Använd toLowerCase() eller toUpperCase() för att jämföra strängen.
-Jämför originalsträngen med strängen konverterad till gemener eller versaler.
+// let val;
+// do {
+// val = Number(prompt("Välj ett alternativ:\n1. Säga hej\n2. Säga hejdå\n3. Avsluta"));
+// if (val === 1) {
+// console.log("Hej!");
+// } else if (val === 2) {
+// console.log("Hejdå!");
+// } else if (val === 3) {
+// console.log("Programmet avslutas.");
+// } else {
+// console.log("Ogiltigt val, försök igen.");
+// }
+// } while (val !== 3);
 
-Övning 2: Jämföra Tal med toFixed (Lätt)
+// Förklaring:
 
-Uppgift:
-
-Be användaren ange ett decimaltal.
-Om talet avrundat till två decimaler är större än 10.5, skriv ut "Talet är större än 10.5."
-Annars, skriv ut "Talet är mindre än eller lika med 10.5."
-
-Tips:
-Använd toFixed(2) för att avrunda talet till två decimaler.
-Kom ihåg att toFixed() returnerar en sträng; konvertera tillbaka till Number vid behov.
-
-Övning 3: Kontrollera Egenskap i Objekt (Medel)
-
-Uppgift:
-
-Skapa ett objekt person med egenskaperna namn, ålder och stad.
-Be användaren ange en egenskap att söka efter (t.ex. "ålder").
-Kontrollera om egenskapen finns i objektet med hjälp av Object.keys().
-Om egenskapen finns, skriv ut dess värde.
-Annars, skriv ut "Egenskapen finns inte."
-
-Tips:
-Använd Object.keys(person) för att få en lista över egenskaper.
-Använd includes() för att kontrollera om egenskapen finns i arrayen.
-
-Övning 4: Validera Telefonnummer (Medel)
-
-Uppgift:
-
-Be användaren ange ett telefonnummer.
-Kontrollera att telefonnumret:
-Är exakt 10 tecken långt.
-Innehåller endast siffror.
-Om båda villkoren uppfylls, skriv ut "Telefonnumret är giltigt."
-Annars, skriv ut "Telefonnumret är ogiltigt."
-
-Tips:
-Använd length för att kontrollera längden på strängen.
-Använd isNaN() för att kontrollera om strängen endast innehåller siffror.
-
-Övning 5: Kontrollera Inledande Text (Medel)
-
-Uppgift:
-
-Be användaren ange en mening.
-Extrahera de första fem tecknen med slice().
-Om de första fem tecknen är "Hello", skriv ut "Hälsning upptäckt."
-Annars, skriv ut "Ingen hälsning upptäckt."
-
-Tips:
-Använd .slice()
-
-Övning 6: Kontonummer Validering (Svår)
-
-Uppgift:
-
-Be användaren ange ett kontonummer.
-Kontrollera att kontonumret:
-Är exakt 14 tecken långt.
-Innehåller endast siffror.
-Börjar med "75".
-Om alla villkor uppfylls, skriv ut "Kontonumret är giltigt."
-Annars, skriv ut vilket villkor som inte uppfylldes.
-
-Tips:
-Använd startsWith() för att kontrollera inledande tecken.
-Använd en loop eller isNaN() för att kontrollera om strängen innehåller endast siffror.
-
-Övning 7: Jämföra Produkters Priser (Svår)
-
-Uppgift:
-
-Skapa två objekt produktA och produktB med egenskaperna namn och pris.
-Jämför priserna på de två produkterna.
-Om produktA är dyrare än produktB, skriv ut "produktA.namn är dyrare."
-Om produktB är dyrare, skriv ut "produktB.namn är dyrare."
-Om de kostar lika mycket, skriv ut "Produkter kostar lika mycket."
-
-Tips:
-Åtkomst till objektets egenskaper via punktnotation, t.ex. produktA.pris.
-
-Övning 8: Kontrollera Palindrom (Svår)
-
-Uppgift:
-
-Be användaren ange ett ord.
-Kontrollera om ordet är ett palindrom (stavas likadant fram- och baklänges).
-Om det är ett palindrom, skriv ut "Ordet är ett palindrom."
-Annars, skriv ut "Ordet är inte ett palindrom."
-
-Tips:
-Använd split(''), reverse(), join('') för att vända strängen.
-Jämför den ursprungliga strängen med den omvända strängen.
-Gör strängen gemener med toLowerCase() för att undvika problem med versaler.
-
-Övning 9: Analys av Textlängd (Mycket Svår)
-
-Uppgift:
-
-Be användaren ange en mening.
-Räkna antalet ord i meningen genom att använda split(' ').
-Om meningen innehåller fler än 10 ord, skriv ut "Meningen är för lång."
-Annars, skriv ut "Meningen är godkänd."
-
-Tips:
-Använd trim() för att ta bort extra mellanslag i början och slutet.
-Dela upp meningen i en array av ord med split(' ').
-Filtrera bort tomma strängar i arrayen om det finns flera mellanslag.
-
-Övning 10: Analysera Studentens Betyg (Mycket Svår)
-
-Uppgift:
-
-Skapa ett objekt student med egenskaperna:
-namn: studentens namn.
-betyg: en array av nummer (studentens betyg).
-stad: studentens stad.
-Beräkna medelvärdet av betygen i betyg.
-Om medelvärdet är 90 eller högre, lägg till egenskapen toppelev med värdet true i objektet.
-Annars, lägg till egenskapen toppelev med värdet false.
-Skriv ut hela student-objektet.
-
-Tips:
-Använd en loop eller reduce() för att beräkna summan av betygen.
-Beräkna medelvärdet genom att dividera summan med antalet betyg.
-Lägg till en ny egenskap till objektet med student.toppelev = true;
+// Loopen körs minst en gång och fortsätter tills användaren väljer att avsluta.

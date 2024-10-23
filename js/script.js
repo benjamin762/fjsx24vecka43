@@ -1,78 +1,93 @@
-console.log("Hej Tisdag!");
-// Ämnen att täcka:
+console.log("Hej Onsdag!");
 
-// 1.1 If-satser med Logiska Operatorer
-// Exempel 1: Ålderskontroll med if-sats
+// Ämnen: For-loop, while, do/while
 
-// let age = Number(prompt("Ange din ålder:"));
+// Syntax för for-loops:
 
-// if (age >= 18) {
-//   console.log("Du är myndig");
-// } else {
-//   console.log("Du är ej myndig");
+// for(initialisering; vilkor; uppdatering) {
+//     kod som upprepas
 // }
 
-// ------------------------------------------------
-// Exempel 2: Inloggningssystem med logiska operatorer
+// Kolla upp varför i-- inte är samma som i -1
 
-// let userName = prompt("Ange ditt användarnamn:");
-// let password = prompt("Ange ditt lösenord:");
+// for (let i = 10; i >= 1; i--) {
+//   console.log("index: ", i);
+//   for (let j = 0; j <= 5; j++) {
+//     console.log("j: ", j);
+//   }
 
-// if (userName === "admin" && password === "hemligt") {
-//   console.log("Access granted ", userName);
-// } else if (userName === "lärare" && password === "mandus") {
-//   console.log("Access granted ", userName);
-// } else {
-//   console.log("Access denied ");
 // }
 
-// ------------------------------------------------
-// Exempel 3: Användning av || operatorn
+// let summa = 0;
 
-// let day = prompt("Ange vilken dag det är idag:");
-
-// if (day.toLowerCase() === "lördag" || day.toLowerCase() === "söndag") {
-//   console.log(`Det är ${day} och helg!`);
-// } else {
-//   console.log("Det är vardag", day);
+// for (let i = 0; i <= 100; i++) {
+//   summa += i;
+//   //   console.log("i", i);
+//   //   console.log("summa", summa);
 // }
 
-// ------------------------------------------------lör
+// console.log("Slutresultatet efter hela for loppen är summa: ", summa);
 
-// Exempel 4: Negation med ! operatorn
+// -------------------------------------------
 
-// let isRaining = false;
-// let isSunny = true;
-// let havingBoring = true;
-// let haveTwoLegs = false;
+// while do/while
 
-// if ((!isRaining && !isSunny) || (!haveTwoLegs && havingBoring)) {
-//   console.log("Ut och spela fotboll");
-// } else {
-//   console.log("Stannar inne och läser en bok");
+// Syntax:
+
+// while (vilkor) {
+//     Kod som upprepas så länge vilkoret är sant
 // }
 
-// ------------------------------------------------
+// Exempel: Gissa talet:
+// skapa ett program där user ska gissa ett förutbestämt tal
 
-// Introducera ternär operatorn som ett kortare sätt att skriva enkla if-else-satser:
+// let secretRandomNumber = Math.random() * 10;
+// console.log(secretRandomNumber, "först");
+// secretRandomNumber = Math.ceil(secretRandomNumber);
+// console.log(secretRandomNumber);
 
-// villkor ? uttryckOmSant : uttryckOmFalskt;
+// let guess = Number(prompt("Gissa ett tal mellan 1 - 10: "));
 
-// let temperature = Number(prompt("Ange aktuell temperatur:"));
-
-// if else:
-// if (temperature > 25) {
-//   console.log("Det är varmt ute idag");
-// } else {
-//   console.log("Det är INTE varmt ute idag");
+// while (guess !== secretRandomNumber) {
+//   guess = Number(
+//     prompt("Fel gissat!Försök igen, ge mig en gissning mellan 1 - 10: ")
+//   );
 // }
 
-// ternary operator:
+// console.log(
+//   "Grattis du gissade på rätt siffra",
+//   "secretRandomNumber: ",
+//   secretRandomNumber,
+//   "guess: ",
+//   guess
+// );
 
-// temperature > 35
-//   ? console.log("Det är väldigt varmt ute idag")
-//   : temperature > 25
-//   ? console.log("Det är varmt")
-//   : temperature > 9 && temperature < 21
-//   ? console.log("Det är", temperature)
-//   : console.log("Det är INTE varmt ute idag");
+// Do while loopar
+
+// Syntax:
+
+// do {
+//     // Kod som körs MINST en gång
+// } while ("condition/villkor");
+
+// Skapa en enkel meny som upprepas till användaren väljer att avsluta
+
+// let choice;
+
+// do {
+//   choice = Number(
+//     prompt(
+//       "Välj ett av dessa alternativ: 1: Säg hej. 2: Säg Hej då. 3: Avsluta"
+//     )
+//   );
+
+//   if (choice === 1) {
+//     console.log("hej");
+//   } else if (choice === 2) {
+//     console.log("Hej då");
+//   } else if (choice === 3) {
+//     console.log("Programmet avslutas");
+//   } else {
+//     console.log("Ogiltigt val, försök igen, välj en siffra mellan 1-3.");
+//   }
+// } while (choice !== 3);
