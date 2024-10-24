@@ -1,219 +1,317 @@
 # fjsx24vecka43
 
-Fördjupa JavaScript-kunskaper - Ämnen: Loopar: for, while, do-while
+Fördjupa JavaScript-kunskaper - Ämnen: Loopar: Switch-satser
 
 Övningar:
 
-Övning 1: Multiplikationstabell (Lätt)
+Övning 1: Månadskonverterare (Lätt)
 
 Uppgift:
 
-Be användaren ange ett tal mellan 1 och 10.
-Använd en for-loop för att skriva ut multiplikationstabellen för det talet (1 till 10).
+Be användaren ange ett nummer mellan 1 och 12.
+Använd en switch-sats för att konvertera numret till motsvarande månadsnamn.
+1: Januari
+2: Februari
+...
+12: December
+Skriv ut månadsnamnet.
 
 Tips:
-Loop från 1 till 10 och multiplicera med användarens tal.
-Exempel:
+Hantera ogiltig inmatning genom att inkludera en default-sats.
+Använd prompt() för att ta emot inmatningen.
 
-Övning 2: Räkna Ned (Lätt)
+Övning 2: Trafiksignalssimulator (Lätt)
 
 Uppgift:
 
-Skriv en loop som räknar ned från 10 till 1 och skriver ut varje nummer.
+Be användaren ange en färg på en trafiksignal (röd, gul, grön).
+Använd en switch-sats för att ge instruktioner baserat på färgen:
+Röd: "Stanna"
+Gul: "Förbered att stanna"
+Grön: "Kör"
+Skriv ut instruktionen.
 
 Tips:
-Använd en for-loop med minskande räknare.
+Gör inmatningen skiftlägesokänslig med toLowerCase().
+Hantera ogiltiga färger med en default-sats.
 
-Övning 3: Summa av Udda Tal (Medel)
-
-Uppgift:
-
-Beräkna summan av alla udda tal mellan 1 och 100.
-
-Tips:
-Kontrollera om ett tal är udda med i % 2 !== 0.
-Exempel:
-
-Övning 4: Enkel Räknare (Medel)
+Övning 3: Enkel Meny för Enhetskonvertering (Medel)
 
 Uppgift:
 
-Skapa en enkel räknare som låter användaren lägga till eller dra ifrån ett värde.
-Programmet ska fortsätta fråga användaren tills de väljer att avsluta.
-
-Tips:
-Använd en while- eller do-while-loop för att upprepa.
-Håll reda på det nuvarande värdet i en variabel.
-
-Övning 5: Fibonacci-sekvensen (Svår)
-
-Uppgift:
-
-Skriv ett program som genererar Fibonacci-sekvensen upp till ett visst antal termer som användaren anger.
-
-Tips:
-Fibonacci-sekvensen: varje tal är summan av de två föregående (0, 1, 1, 2, 3, 5, 8, ...).
-
-Övning 6: Gissa Talet-spel (Svår)
-
-Uppgift:
-
-Skapa ett spel där datorn väljer ett slumpmässigt tal mellan 1 och 100.
-Användaren ska gissa talet.
-Efter varje gissning ska användaren få veta om gissningen är för hög eller för låg.
-Spelet fortsätter tills användaren gissar rätt.
-
-Tips:
-Använd Math.random() och Math.floor() för att generera ett slumpmässigt tal.
-Använd en while-loop för att upprepa gissningarna.
-
-Övning 7: Enkel Meny (Medel)
-
-Uppgift:
-
-Skapa en meny med flera alternativ (t.ex. 1. Se datum, 2. Se tid, 3. Avsluta).
-Användaren ska kunna välja ett alternativ och få relevant information.
-Menyn ska visas igen efter varje val tills användaren väljer att avsluta.
-
-Tips:
-Använd en do-while-loop för att visa menyn upprepade gånger.
-
-Övning 8: Räkna Antalet Vokaler i en Sträng (Svår)
-
-Uppgift:
-
-Be användaren ange en text.
-Använd en for-loop för att iterera över varje tecken i texten.
-Räkna antalet vokaler (a, e, i, o, u, y) i texten.
+Skapa ett program som visar en meny med följande alternativ:
+1: Konvertera Celsius till Fahrenheit
+2: Konvertera Kilometer till Miles
+3: Konvertera Kilogram till Pounds
+Använd en switch-sats för att hantera användarens val.
+Be användaren ange det värde som ska konverteras och utför konverteringen.
 Skriv ut resultatet.
 
 Tips:
-Använd toLowerCase() för att göra jämförelsen skiftlägesokänslig.
-Använd charAt(i) eller indexering text[i] för att få varje tecken.
+Använd lämpliga formler för konverteringarna.
+Exempel: Fahrenheit = Celsius \* 9/5 + 32
 
-Övning 9: Faktorberäkning (Medel)
-
-Uppgift:
-
-Be användaren ange ett positivt heltal.
-Beräkna och skriv ut n! (n-fakultet), dvs. produkten av alla positiva heltal mindre än eller lika med n.
-
-Tips:
-Använd en for-loop för att multiplicera talen.
-
-Övning 10: Palindromkontroll (Svår)
+Övning 4: Poäng till Betyg (Medel)
 
 Uppgift:
 
-Be användaren ange en text.
-Använd en loop för att kontrollera om texten är ett palindrom (samma fram- och baklänges).
-Skriv ut om texten är ett palindrom eller inte.
+Be användaren ange sina poäng (0-100).
+Använd en switch-sats för att konvertera poängen till ett betyg enligt följande intervall:
+90-100: A
+80-89: B
+70-79: C
+60-69: D
+0-59: F
+Skriv ut betyget.
 
 Tips:
-Använd en for-loop för att jämföra tecken från början och slutet.
+Eftersom switch-satsen inte kan hantera intervall direkt, kan du använda Math.floor() för att avrunda poängen och sedan hantera olika fall.
 
-console.log("Hej Onsdag!");
-// Ämnen att täcka:
+Övning 5: Enkel Bankomat (Svår)
 
-// For-loop
+Uppgift:
 
-// Syntaxen för en For-loop:
+Skapa en enkel bankomatmeny med följande alternativ:
+1: Visa saldo
+2: Ta ut pengar
+3: Sätt in pengar
+4: Avsluta
+Använd en switch-sats för att hantera användarens val.
+Använd en variabel för att hålla reda på saldot.
+Låt programmet fortsätta tills användaren väljer att avsluta.
 
-// for (initialisering; villkor; uppdatering) {
-// // Kod som upprepas
-// }
+Tips:
+Använd en while- eller do-while-loop för att upprepa menyn.
+Hantera ogiltig inmatning och otillräckligt saldo vid uttag.
 
-// Code Along - Exempel 1: Iterera över en Talserie
+Övning 6: Enhetsomvandlare med Meny (Svår)
 
-// for (let i = 1; i <= 10; i++) {
-// console.log(i);
-// }
+Uppgift:
 
-// Förklaring:
+Skapa en meny där användaren kan välja mellan olika enhetsomvandlingar:
+1: Längd (meter till kilometer)
+2: Vikt (gram till kilogram)
+3: Tid (sekunder till minuter)
+Använd en switch-sats för att hantera valet.
+Be användaren ange värdet som ska konverteras och utför konverteringen.
+Skriv ut det konverterade värdet.
+Låt programmet fortsätta fråga användaren tills de väljer att avsluta.
 
-// let i = 1; - Startvärde för räknaren.
-// i <= 10; - Loopens villkor; körs så länge detta är sant.
-// i++ - Uppdatering av räknaren efter varje iteration.
+Tips:
+Använd en loop för att fortsätta visa menyn.
+Hantera ogiltiga val och inmatningar.
 
-// Code Along - Exempel 2: Beräkna Summan av Tal
+Övning 7: Språkväljare (Lätt)
 
-// Uppgift:
+Uppgift:
 
-// Beräkna summan av talen från 1 till 100.
+Be användaren välja ett språk från en meny:
+1: Svenska
+2: Engelska
+3: Spanska
+Använd en switch-sats för att skriva ut "Hej Världen!" på det valda språket.
+Svenska: "Hej Världen!"
+Engelska: "Hello World!"
+Spanska: "¡Hola Mundo!"
 
-// let summa = 0;
-// for (let i = 1; i <= 100; i++) {
-// summa += i;
-// }
-// console.log(`Summan av talen 1 till 100 är ${summa}.`);
+Tips:
+Hantera ogiltiga val med en default-sats.
 
-// Förklaring:
+Övning 8: Färgväljare (Medel)
 
-// Variabeln summa sammlar värdet av i, i varje iteration.
-// (formeln för summan av en aritmetisk serie är: 𝑛(𝑛+1) där 𝑛 n är 100 i ditt fall).
-// /2
+Uppgift:
 
-// ------------------------------------------------------
+Be användaren ange en färg (röd, grön, blå).
+Använd en switch-sats för att skriva ut en kort beskrivning av färgen.
+Röd: "Röd är färgen av eld och blod."
+Grön: "Grön symboliserar natur och lugn."
+Blå: "Blå representerar havet och himlen."
+Gör inmatningen skiftlägesokänslig.
 
-// While- och Do-while-loopar
+Tips:
+Använd toLowerCase() för att hantera skiftlägesokänslighet.
 
-// While-loopar:
+Övning 9: Enklare FizzBuzz med Switch (Svår)
 
-// Syntax:
+Uppgift:
 
-// while (villkor) {
-// // Kod som upprepas så länge villkoret är sant
-// }
+Be användaren ange ett tal mellan 1 och 100.
+Använd en switch-sats för att:
+Om talet är delbart med 3, skriv ut "Fizz".
+Om talet är delbart med 5, skriv ut "Buzz".
+Om talet är delbart med både 3 och 5, skriv ut "FizzBuzz".
+Annars, skriv ut talet.
 
-// Exempel 3: Gissa Talet (Använda While-loop)
+Tips:
+Eftersom switch-satsen inte kan hantera uttryck direkt, använd en kombination av matematiska operationer och switch.
 
-// Uppgift:
+Övning 10: Meny för Personliga Inställningar (Svår)
 
-// Skapa ett program där användaren ska gissa ett förbestämt tal.
-// let randomNumber = Math.random() \* 10;
-// randomNumber = Math.ceil(randomNumber);
+Uppgift:
 
-// let hemligtTal = randomNumber;
-// let gissning = Number(prompt("Gissa ett tal mellan 1 och 10:"));
+Skapa en meny där användaren kan ändra personliga inställningar:
+1: Ändra användarnamn
+2: Ändra lösenord
+3: Aktivera/Däaktivera notifikationer
+4: Visa aktuella inställningar
+5: Avsluta
+Använd en switch-sats för att hantera valet.
+Använd en loop för att fortsätta visa menyn tills användaren väljer att avsluta.
 
-// while (gissning !== hemligtTal) {
-// gissning = Number(prompt("Fel gissat! Försök igen:"));
-// }
+Tips:
+Använd variabler för att lagra användarens inställningar.
+Hantera lösenordsändring med omsorg för säkerheten (simulerat).
 
-// console.log("Grattis! Du gissade rätt.");
+Övning 11: Djurens Ljud (Lätt)
 
-// Förklaring:
+Uppgift:
 
-// Loopen fortsätter tills användaren gissar rätt tal.
+Be användaren ange ett djur (hund, katt, ko, får).
+Använd en switch-sats för att skriva ut vilket ljud djuret gör:
+Hund: "Vov vov"
+Katt: "Mjau"
+Ko: "Mu"
+Får: "Bä"
+Hantera ogiltiga inmatningar.
 
-// Do-while-loopar:
+Tips:
+Använd toLowerCase() för att hantera skiftlägesokänslighet.
+Inkludera en default-sats för ogiltiga djur.
 
-// Syntax:
+Övning 12: Enkel Räknesnurra (Medel)
 
-// do {
-// // Kod som körs minst en gång
-// } while (villkor);
+Uppgift:
 
-// Exempel 4: Menyval (Använda Do-while-loop)
+Skapa ett program som fungerar som en enkel räknesnurra.
+Visa en meny med följande alternativ:
+1: Öka värdet med 1
+2: Minska värdet med 1
+3: Nollställ värdet
+4: Visa aktuellt värde
+5: Avsluta
+Använd en switch-sats för att hantera användarens val.
+Använd en variabel för att hålla reda på det aktuella värdet (börja med 0).
+Låt programmet fortsätta tills användaren väljer att avsluta.
 
-// Uppgift:
+Tips:
+Använd en loop för att upprepa menyn.
+Hantera ogiltiga val.
 
-// Skapa en enkel meny som upprepas tills användaren väljer att avsluta.
+Övning 13: Musikgenresorterare (Medel)
 
-// let val;
-// do {
-// val = Number(prompt("Välj ett alternativ:\n1. Säga hej\n2. Säga hejdå\n3. Avsluta"));
-// if (val === 1) {
-// console.log("Hej!");
-// } else if (val === 2) {
-// console.log("Hejdå!");
-// } else if (val === 3) {
-// console.log("Programmet avslutas.");
-// } else {
-// console.log("Ogiltigt val, försök igen.");
-// }
-// } while (val !== 3);
+Uppgift:
 
-// Förklaring:
+Be användaren ange en musikgenre (pop, rock, jazz, klassisk).
+Använd en switch-sats för att rekommendera en artist eller ett band inom den genren.
+Pop: "Vi rekommenderar Taylor Swift."
+Rock: "Vi rekommenderar Queen."
+Jazz: "Vi rekommenderar Miles Davis."
+Klassisk: "Vi rekommenderar Ludwig van Beethoven."
+Skriv ut rekommendationen.
 
-// Loopen körs minst en gång och fortsätter tills användaren väljer att avsluta.
+Tips:
+Hantera skiftlägesokänslighet med toLowerCase().
+Använd default för att hantera ogiltiga genrer.
+
+Övning 14: Planetväljare (Svår)
+
+Uppgift:
+
+Be användaren välja en planet i vårt solsystem (Mercurius, Venus, Jorden, Mars, Jupiter, Saturnus, Uranus, Neptunus).
+Använd en switch-sats för att skriva ut antalet månar planeten har.
+Exempel:
+Mars: "Mars har 2 månar."
+Jupiter: "Jupiter har 79 månar."
+Hantera ogiltiga inmatningar.
+
+Tips:
+Använd toLowerCase() för inmatningen.
+Forskning kan krävas för att hitta antalet månar för varje planet.
+
+Övning 15: Meny för Restaurangbeställning (Svår)
+
+Uppgift:
+
+Skapa en meny för en restaurang med följande kategorier:
+1: Förrätter
+2: Huvudrätter
+3: Desserter
+4: Drycker
+5: Visa beställning
+6: Avsluta
+Använd en switch-sats för att hantera valet.
+När användaren väljer en kategori, visa en undermeny med alternativ och priser.
+Låt användaren lägga till rätter till sin beställning.
+Håll reda på totalpriset och visa det när användaren väljer att visa beställningen.
+Låt programmet fortsätta tills användaren väljer att avsluta.
+
+Tips:
+Använd nästlade switch-satser eller if-satser för att hantera undermenyer.
+Använd en array eller objekt för att lagra beställningen och priser.
+Ytterligare Övningar:
+
+Övning 16: Kodspråksväljare (Lätt)
+
+Uppgift:
+
+Be användaren välja ett programmeringsspråk från en meny:
+1: JavaScript
+2: Python
+3: Java
+4: C#
+Använd en switch-sats för att skriva ut en kort beskrivning av språket.
+
+Tips:
+Hantera ogiltiga val med en default-sats.
+
+Övning 17: Enkel Prognosgenerator (Medel)
+
+Uppgift:
+
+Skapa en meny där användaren kan välja en stad:
+1: Stockholm
+2: Göteborg
+3: Malmö
+Använd en switch-sats för att ge en slumpmässig väderprognos för den valda staden.
+
+Tips:
+Använd en array med möjliga väder (t.ex. "Soligt", "Regnigt") och välj slumpmässigt.
+Använd Math.random() för att generera slumpmässiga prognoser.
+
+Övning 18: Fruktprisräknare (Medel)
+
+Uppgift:
+
+Be användaren ange en frukt (äpple, banan, apelsin, päron).
+Använd en switch-sats för att ange priset per kilo för frukten.
+Be användaren ange antal kilo de vill köpa.
+Beräkna och skriv ut totalpriset.
+
+Tips:
+Hantera skiftlägesokänslighet.
+Hantera ogiltiga inmatningar med en default-sats.
+
+Övning 19: Zodiac-tecken (Svår)
+
+Uppgift:
+
+Be användaren ange sin födelsemånad (1-12).
+Använd en switch-sats för att bestämma vilket stjärntecken användaren har.
+Skriv ut stjärntecknet och en kort beskrivning.
+
+Tips:
+Hantera månader och datum för att exakt bestämma stjärntecken kan kräva ytterligare logik.
+Fokusera på månaden för enkelhet, eller be användaren ange dag och månad.
+
+Övning 20: Simpel Chattbot (Svår)
+
+Uppgift:
+
+Skapa en enkel chattbot som svarar på användarens hälsningar.
+Be användaren skriva in en hälsningsfras (t.ex. "hej", "hallå", "god morgon").
+Använd en switch-sats för att ge ett passande svar.
+Om hälsningen inte känns igen, svara med "Jag förstår inte."
+
+Tips:
+Använd toLowerCase() och trim() för att hantera inmatningen.
+Hantera olika varianter av hälsningar.
